@@ -1,0 +1,112 @@
+/* Variables */
+
+:root {
+    --font-family: 'Source Sans Pro', serif;
+    --color-white: #FFFFFF;
+    --color-dark: #071629;
+    --color-gray: #979797;
+    --color-primary: #C271FF;
+}
+
+
+/* Font-Icons  */
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src: url('fonts/holberton_school-icon.eot');
+    src: url('fonts/holberton_school-icon.eot') format('embedded-opentype'), url('fonts/holberton_school-icon.ttf') format('truetype'), url('fonts/holberton_school-icon.woff') format('woff'), url('fonts/holberton_school-icon.svg') format('svg');
+}
+
+
+/* Base  */
+
+body {
+    font-family: var(--font-family) !important;
+}
+
+.off-screen {
+    left: -100vw;
+    position: absolute;
+}
+
+
+/* Buttons */
+
+.btn,
+.btn:hover,
+.btn:focus {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.9;
+}
+
+.btn-shadow {
+    box-shadow: 0 0 10px 5px rgba(56, 56, 56, 0.813);
+}
+
+
+/* NavLinks */
+
+li a {
+    color: var(--color-dark);
+}
+
+li a:hover,
+li a:focus {
+    color: var(--color-primary) !important;
+    text-decoration: none;
+}
+
+.current:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-white);
+}
+
+.navbar-icon:before {
+    font-family: 'holberton_school-icon';
+    content: "\e911";
+    color: var(--color-white);
+}
+
+.navbar-toggler {
+    font-size: 2.25rem;
+    top: 3rem;
+}
+
+
+/* Colors */
+
+.purple-bg {
+    background-color: var(--color-primary) !important;
+}
+
+.dark-bg {
+    background-color: var(--color-dark);
+}
+
+.purple {
+    color: var(--color-primary);
+}
+
+.border-gray {
+    border-color: var(--color-gray) !important;
+}
+
+
+/* Background */
+
+.homepage {
+    background-image: url('images/pic_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
