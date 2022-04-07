@@ -17,6 +17,20 @@
     src: url('fonts/holberton_school-icon.eot') format('embedded-opentype'), url('fonts/holberton_school-icon.ttf') format('truetype'), url('fonts/holberton_school-icon.woff') format('woff'), url('fonts/holberton_school-icon.svg') format('svg');
 }
 
+.icon:before {
+    font-family: "holberton_school-icon", sans-serif !important;
+}
+
+.leftArrow:before {
+    content: "\e903";
+    font-size: 8rem;
+}
+
+.rightArrow:before {
+    content: "\e902";
+    font-size: 8rem;
+}
+
 
 /* Base  */
 
@@ -111,10 +125,27 @@ li a:focus {
     background-position: center top;
 }
 
+.carousel-avatar {
+    margin-top: 2rem;
+}
+
 @media (min-width: 768px) {
     .col-md-3 {
         -ms-flex: 0 0 25%;
         flex: 0 0 21%;
         max-width: 25%;
+    }
+    .carousel-avatar {
+        width: 165px;
+        margin-top: 0;
+    }
+    .carousel-helper {
+        margin-left: 9.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .carousel-helper {
+        margin-left: 5.7rem;
     }
 }
