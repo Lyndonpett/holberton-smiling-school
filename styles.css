@@ -110,3 +110,11 @@ li a:focus {
     background-size: cover;
     background-position: center top;
 }
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 21%;
+        max-width: 25%;
+    }
+}
