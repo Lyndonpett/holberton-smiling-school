@@ -152,6 +152,18 @@ li a:focus {
     margin-top: 2rem;
 }
 
+.phone {
+	display: block;
+}
+
+.tablet {
+	display: none;
+}
+
+.desktop {
+	display: none;
+}
+
 
 /* Video Carousel */
 
@@ -203,10 +215,42 @@ li a:focus {
     color: var(--color-dark);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .carousel-helper {
         margin-left: 5.7rem;
     }
+
+	.carousel-avatar {
+        margin-top: 0;
+	}
+
+	.phone {
+		display: none;
+	}
+
+	.tablet {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.pl-6 {
+		padding-left: 1rem;
+	}
+
+	.pl-6-left {
+		padding-left: 1rem;
+	}
+
+	.tabletHelper {
+		padding-left: 5.15rem;
+	}
+	
+	.rowHelper {
+		padding-left: 6rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -234,4 +278,16 @@ li a:focus {
     .videoRight {
         right: -7.5rem;
     }
+
+	.phone {
+		display: none;
+	}
+
+	.tablet {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
 }
