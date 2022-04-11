@@ -152,6 +152,13 @@ li a:focus {
     background-position: center top;
 }
 
+.courses {
+    background-image: url('images/pic_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
 
 /* Carousels */
 
